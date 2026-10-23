@@ -1,5 +1,6 @@
 import streamlit as st
 from crm_v2 import VERSION
+from crm_v2.filter_ui import render_cloud_features
 from crm_v2.photos import browser_photos_enabled, request_photos, render_photo_viewer
 import pandas as pd
 import gspread
@@ -2996,14 +2997,7 @@ def crm_main_interface():
 
                 with col_dacdiem:
                     st.write("**💎 Đặc điểm (VÀ):**")
-                    t1, t2, t3, t4, t5, t6, t7 = st.columns(7)
-                    t1.checkbox("Thang máy", value="TMA" in st.session_state.f_tags, key=f"tma_{suffix}")
-                    t2.checkbox("Nội thất", value="NTC" in st.session_state.f_tags, key=f"ntc_{suffix}")
-                    t3.checkbox("Không lỗi", value="KLP" in st.session_state.f_tags, key=f"klp_{suffix}")
-                    t4.checkbox("2 MT", value="2MT" in st.session_state.f_tags, key=f"2mt_{suffix}")
-                    t5.checkbox("Căn góc", value="CGO" in st.session_state.f_tags, key=f"cgo_{suffix}")
-                    t6.checkbox("TTT", value="TTT" in st.session_state.f_tags, key=f"ttt_{suffix}")
-                    t7.checkbox("DTT", value="DTT" in st.session_state.f_tags, key=f"dtt_{suffix}")
+                    render_cloud_features(st.session_state.f_tags, suffix)
 
                 render_add_customer_button(df_houses, df_kids, 'add_customer_cloud')
 
