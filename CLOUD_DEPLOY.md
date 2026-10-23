@@ -7,9 +7,9 @@
 - Main file: `streamlit_app.py`.
 - Python: 3.13 hoặc phiên bản được Streamlit hỗ trợ tương thích requirements.
 
-Repository đã có mã nguồn. Tại thời điểm chuẩn bị, tên miền còn trống;
-app chưa được tạo vì workspace Streamlit chưa có quyền đọc repository riêng tư.
-Cần giải quyết quyền repository trước khi nhấn Deploy.
+Repository đã có mã nguồn và được công khai theo yêu cầu của chủ app.
+CSV, ảnh, Google credentials và Secrets không nằm trong repository.
+Tại thời điểm chuẩn bị, tên miền còn trống; app đang được cấu hình triển khai.
 
 ## Secrets
 
