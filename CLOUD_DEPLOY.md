@@ -3,6 +3,8 @@
 - Streamlit workspace được chọn: `trungpv955-design`.
 - URL yêu cầu: `https://dtk-crmv2.streamlit.app/`.
 - Repository: `https://github.com/stevenphamntvn/dtk-crmv2`.
+- Khi dùng workspace `trungpv955-design`, cần fork repository này sang GitHub
+  `trungpv955-design` và chọn repository fork trong biểu mẫu deploy.
 - Branch: `codex/crm-v2`.
 - Main file: `streamlit_app.py`.
 - Python: 3.13 hoặc phiên bản được Streamlit hỗ trợ tương thích requirements.
@@ -10,6 +12,9 @@
 Repository đã có mã nguồn và được công khai theo yêu cầu của chủ app.
 CSV, ảnh, Google credentials và Secrets không nằm trong repository.
 Tại thời điểm chuẩn bị, tên miền còn trống; app đang được cấu hình triển khai.
+Streamlit yêu cầu quyền quản trị repository ngay cả khi mã nguồn công khai.
+Chỉ công khai repository của `stevenphamntvn` chưa đủ để workspace `trungpv955-design`
+triển khai; cần fork sang đúng tài khoản.
 
 ## Secrets
 
@@ -39,4 +44,4 @@ kiểm duyệt sync trên giao diện.
 4. Trên Chrome Android: chọn thư mục SH Total, cấp quyền, mở JPG tại thiết bị.
 5. Căn không có JPG local: dùng link Cloud của đúng căn.
 
-26 kiểm thử Python và 3 kiểm thử JavaScript đã đạt trước triển khai.
+28 kiểm thử Python và 3 kiểm thử JavaScript đã đạt trước triển khai.
