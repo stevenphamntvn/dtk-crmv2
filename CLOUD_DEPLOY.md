@@ -11,8 +11,11 @@
 Repository đã có mã nguồn và được công khai theo yêu cầu của chủ app.
 CSV, ảnh, Google credentials và Secrets không nằm trong repository.
 Ngày 24/10/2026, app đã được tạo và khởi động tại URL trên bằng Python 3.14.
-Đã kiểm tra màn hình chặn truy cập khi chưa cấu hình Secrets; bước nhập Secrets
-đang được chủ app thực hiện trực tiếp vì kênh điều khiển che giá trị khóa khi dán.
+Chủ app đã lưu Secrets trực tiếp. Đã kiểm tra trên Cloud: màn hình yêu cầu cấu hình
+được thay bằng form đăng nhập bình thường, xác nhận app đã nhận tài khoản từ Secrets.
+Chưa đăng nhập thay người dùng hoặc kiểm tra thao tác dữ liệu sau đăng nhập trên Cloud.
+Service account trong file local đã được kiểm tra quyền đọc ba sheet nghiệp vụ;
+không có thao tác ghi Google Sheets trong quá trình triển khai.
 Streamlit yêu cầu quyền quản trị repository ngay cả khi mã nguồn công khai.
 Chỉ công khai repository của `stevenphamntvn` chưa đủ để workspace `trungpv955-design`
 triển khai; cần fork sang đúng tài khoản.
