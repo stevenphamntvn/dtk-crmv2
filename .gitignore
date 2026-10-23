@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data cache (nhưng giữ file CSV quan trọng)
+Data/cache/*.csv
+!Data/cache/.gitkeep
+
+# Credentials
+Data/credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Executable files
+*.exe
+*.msi
+*.dmg
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# PWA build artifacts (nếu có)
+.node_modules/
+package-lock.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+.env.local
+
+# Documentation and temporary files
+NEXT_STEPS.md
+streamlit_secrets.txt
+convert_credentials.py
+# V2 private device data and release staging
+Data/cache/
+.updates/
+releases/
+*.zip
+settings.local.json
