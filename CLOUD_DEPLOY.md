@@ -2,19 +2,28 @@
 
 - Streamlit workspace được chọn: `trungpv955-design`.
 - URL yêu cầu: `https://dtk-crmv2.streamlit.app/`.
-- Repository: `https://github.com/stevenphamntvn/dtk-crmv2`.
-- Khi dùng workspace `trungpv955-design`, cần fork repository này sang GitHub
-  `trungpv955-design` và chọn repository fork trong biểu mẫu deploy.
+- Repository nguồn: `https://github.com/stevenphamntvn/dtk-crmv2`.
+- Repository đang deploy: `https://github.com/trungpv955-design/dtk-crmv2`.
 - Branch: `codex/crm-v2`.
 - Main file: `streamlit_app.py`.
 - Python: 3.13 hoặc phiên bản được Streamlit hỗ trợ tương thích requirements.
 
 Repository đã có mã nguồn và được công khai theo yêu cầu của chủ app.
 CSV, ảnh, Google credentials và Secrets không nằm trong repository.
-Tại thời điểm chuẩn bị, tên miền còn trống; app đang được cấu hình triển khai.
+Ngày 24/10/2026, app đã được tạo và khởi động tại URL trên bằng Python 3.14.
+Đã kiểm tra màn hình chặn truy cập khi chưa cấu hình Secrets; bước nhập Secrets
+đang được chủ app thực hiện trực tiếp vì kênh điều khiển che giá trị khóa khi dán.
 Streamlit yêu cầu quyền quản trị repository ngay cả khi mã nguồn công khai.
 Chỉ công khai repository của `stevenphamntvn` chưa đủ để workspace `trungpv955-design`
 triển khai; cần fork sang đúng tài khoản.
+
+## Cập nhật khi dùng fork
+
+Sửa và kiểm thử mã tại V2 rồi đẩy lên repository nguồn. Trên GitHub của
+`trungpv955-design/dtk-crmv2`, dùng **Sync fork → Update branch** để nhận bản mới
+trên nhánh `codex/crm-v2`; Streamlit sẽ deploy từ bản fork đó. Chỉ push repository
+nguồn chưa làm app trong tài khoản trungpv cập nhật. Máy local dùng gói ZIP cùng
+phiên bản theo README. Chưa cấu hình tự đồng bộ hai repository.
 
 ## Secrets
 
