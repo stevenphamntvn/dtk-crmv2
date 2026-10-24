@@ -88,3 +88,7 @@ node --test tests/test_photos.mjs
 ```
 
 Các kiểm thử sử dụng dữ liệu tạm và mock; không ghi Google Sheets.
+
+## Cập nhật 2.0.0-dev.3
+
+Các ô Đặc điểm tự xuống hàng trên tablet để hiện đủ nhãn; màn hình PC rộng giữ một hàng. Các lựa chọn lọc được giữ nguyên.
